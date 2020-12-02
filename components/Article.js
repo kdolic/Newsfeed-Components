@@ -163,3 +163,5 @@ const newArticle =
 
 const newArt1 = articleMaker(newArticle);
 articles.appendChild(newArt1);
+
+// MVP DONE

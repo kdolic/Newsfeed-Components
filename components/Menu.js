@@ -55,3 +55,5 @@ function menuMaker(menuItems){
   
   const menu1 = menuMaker(menuItems);
   header.appendChild(menu1);
+
+  // MVP DONE
