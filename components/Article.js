@@ -120,17 +120,16 @@ function articleMaker(object){
   article.appendChild(p3);
   article.appendChild(expandButton);
 
+  article.classList.add('article');
+  date.classList.add('date');
+  expandButton.classList.add('expandButton');
+
   title.textContent = object.title;
   date.textContent = object.date;
   p1.textContent = object.firstParagraph;
   p2.textContent = object.secondParagraph;
   p3.textContent = object.thirdParagraph;
   expandButton.textContent = '+';
-
-
-  article.classList.add('article');
-  date.classList.add('date');
-  expandButton.classList.add('expandButton');
   
   // Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
   // This listener should toggle the class 'article-open' on div.article.
@@ -139,7 +138,7 @@ function articleMaker(object){
   })
 
 // Step 3: Don't forget to return something from your function!
-  return article
+  return article;
 
 }
 
@@ -158,7 +157,7 @@ const newArticle =
 {
   title: 'Lambda School Guide',
   date: 'Dec 2nd, 2020',
-  firstParagraph:
-  secondParagraph:
-  thirdParagraph:
+  firstParagraph: 'Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello Paragraph 1 Hello ',
+  secondParagraph: 'Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello Paragraph 2 Hello ',
+  thirdParagraph: 'Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello Paragraph 3 Hello '
 }
